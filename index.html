@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Earth's Ants - Think, Live & Work Like Ants</title>
+    <title>Earth's Ants</title>
     <link rel="shortcut icon" href="image/Earth's.png" type="image/x-icon">
 <link rel="stylesheet" href="style.css">
 </head>
@@ -183,7 +183,7 @@
                 <div class="presidential-grid">
                     <div class="member-card fade-in">
                         <div class="member-image">
-                            <img src="https://via.placeholder.com/200x200/2c5530/ffffff?text=CEO" alt="CEO">
+                            <img src="image/IMG_7537-1 - Md.Mirajul Islam.JPG" alt="CEO">
                         </div>
                         <div class="member-info">
                             <h3 class="member-name">Md. Mirajul Islam</h3>
@@ -197,29 +197,16 @@
                         </div>
                     </div>
                     
-                    <div class="member-card fade-in">
-                        <div class="member-image">
-                            <img src="https://via.placeholder.com/200x200/2c5530/ffffff?text=VP" alt="Vice President">
-                        </div>
-                        <div class="member-info">
-                            <h3 class="member-name">Sarah Ahmed</h3>
-                            <p class="member-position">Vice President</p>
-                            <p class="member-bio">Environmental scientist with expertise in climate change adaptation and sustainable development.</p>
-                            <div class="member-social">
-                                <a href="mailto:vp@earthsants.org"><i class="icon">📧</i></a>
-                                <a href="#"><i class="icon">🔗</i></a>
-                                <a href="#"><i class="icon">📱</i></a>
-                            </div>
-                        </div>
-                    </div>
+
+                    </div> 
 
                     <div class="member-card fade-in">
                         <div class="member-image">
-                            <img src="https://via.placeholder.com/200x200/2c5530/ffffff?text=GS" alt="General Secretary">
+                            <img src="image/Md - Sami Patwary. Sami Patwary.jpg" alt="Vice-President">
                         </div>
                         <div class="member-info">
-                            <h3 class="member-name">Rifat Hassan</h3>
-                            <p class="member-position">General Secretary</p>
+                            <h3 class="member-name">Md Sami Patwary</h3>
+                            <p class="member-position">Vice-President</p>
                             <p class="member-bio">Coordinating organizational activities and strategic planning for global environmental initiatives.</p>
                             <div class="member-social">
                                 <a href="mailto:gs@earthsants.org"><i class="icon">📧</i></a>
@@ -231,10 +218,10 @@
 
                     <div class="member-card fade-in">
                         <div class="member-image">
-                            <img src="https://via.placeholder.com/200x200/2c5530/ffffff?text=TR" alt="Treasurer">
+                            <img src="image/RafiAhamed - RAFI AHAMED.JPG" alt="Treasurer">
                         </div>
                         <div class="member-info">
-                            <h3 class="member-name">Fatima Khan</h3>
+                            <h3 class="member-name">Rafi Ahmed (Fida)</h3>
                             <p class="member-position">Treasurer</p>
                             <p class="member-bio">Financial expert ensuring sustainable funding and resource management for environmental projects.</p>
                             <div class="member-social">
@@ -247,11 +234,11 @@
 
                     <div class="member-card fade-in">
                         <div class="member-image">
-                            <img src="https://via.placeholder.com/200x200/2c5530/ffffff?text=JS" alt="Joint Secretary">
+                            <img src="image/inbound597570110219169697 - Nuren Tasnim Tiba.jpg" alt="Joint Secretary">
                         </div>
                         <div class="member-info">
-                            <h3 class="member-name">Arif Rahman</h3>
-                            <p class="member-position">Joint Secretary</p>
+                            <h3 class="member-name">Nuren Tasnim</h3>
+                            <p class="member-position">General Secretary</p>
                             <p class="member-bio">Supporting organizational coordination and youth engagement programs across different regions.</p>
                             <div class="member-social">
                                 <a href="mailto:js@earthsants.org"><i class="icon">📧</i></a>
@@ -558,6 +545,33 @@
             </div>
         </div>
     </footer>
+<script>
+  const panelTabs = document.querySelectorAll('.panel-tab');
+  const panelContents = document.querySelectorAll('.panel-content');
+
+  panelTabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+      panelTabs.forEach(t => t.classList.remove('active'));
+      panelContents.forEach(c => c.classList.remove('active'));
+
+      tab.classList.add('active');
+      document.getElementById(tab.dataset.tab).classList.add('active');
+    });
+  });
+
+  const deptTabs = document.querySelectorAll('.dept-tab');
+  const deptContents = document.querySelectorAll('.dept-content');
+
+  deptTabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+      deptTabs.forEach(t => t.classList.remove('active'));
+      deptContents.forEach(c => c.classList.remove('active'));
+
+      tab.classList.add('active');
+      document.getElementById(tab.dataset.dept).classList.add('active');
+    });
+  });
+</script>
 
 <script src="main.js"></script>
 </body>
