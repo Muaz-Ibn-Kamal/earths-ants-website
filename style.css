@@ -624,3 +624,33 @@
             opacity: 1;
             transform: translateY(0);
         }
+        .supporters {
+    padding: 80px 0;
+    background: #f0f0f0;
+}
+
+.supporters-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 2rem;
+    justify-items: center;
+    align-items: center;
+}
+
+.supporter-card {
+    background: white;
+    border-radius: 12px;
+    padding: 1rem;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.supporter-card:hover {
+    transform: translateY(-5px);
+}
+
+.supporter-card img {
+    max-width: 100px;
+    margin-bottom: 0.5rem;
+}
