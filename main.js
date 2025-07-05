@@ -98,3 +98,11 @@
         const currentYear = new Date().getFullYear();
         const footerYear = document.querySelector('.footer-bottom p');
         footerYear.textContent = footerYear.textContent.replace('2025', currentYear);
+        function openModal(id) {
+  document.getElementById(id).classList.remove('hidden');
+}
+document.querySelectorAll('.cta-close').forEach(btn => {
+  btn.addEventListener('click', () => {
+    btn.parentElement.parentElement.classList.add('hidden');
+  });
+});

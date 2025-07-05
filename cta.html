@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- CTA Form Modal Container -->
+<div id="cta-modal" class="cta-modal hidden">
+  <div class="cta-modal-content">
+    <span class="cta-close">&times;</span>
+    <h2 id="cta-modal-title">Get Involved</h2>
+    <form id="cta-form">
+      <input type="text" name="name" placeholder="Full Name" required />
+      <input type="email" name="email" placeholder="Email Address" required />
+      <input type="tel" name="phone" placeholder="Phone / Mobile Number" required />
+      <input type="text" name="address" placeholder="Current Address" required />
+      <input type="text" name="skills" placeholder="Your Skills / Expertise" required />
+      <select name="department" required>
+        <option value="" disabled selected>Select Desired Department</option>
+        <option value="graphics">IT & Graphics</option>
+        <option value="marketing">Marketing & PR</option>
+        <option value="events">Event & Operations</option>
+        <option value="research">Research & Publication</option>
+      </select>
+      <textarea name="reason" placeholder="Why do you want to join? How can you contribute?" rows="4" required></textarea>
+      <button type="submit" class="cta-submit-button">Submit Application</button>
+    </form>
+  </div>
+</div>
+
+<!-- Partner With Us Modal -->
+<div id="partner-modal" class="cta-modal hidden">
+  <div class="cta-modal-content">
+    <span class="cta-close">&times;</span>
+    <h2>Become a Partner</h2>
+    <form id="partner-form">
+      <input type="text" name="organization" placeholder="Organization / Company Name" required />
+      <input type="email" name="email" placeholder="Official Email Address" required />
+      <input type="url" name="website" placeholder="Website / Portfolio URL" />
+      <textarea name="proposal" placeholder="Partnership proposal, idea, or offer." rows="5" required></textarea>
+      <button type="submit" class="cta-submit-button">Send Proposal</button>
+    </form>
+  </div>
+</div>
+
+<!-- Donate Section with Payment Links -->
+<section class="donate-section">
+  <div class="container">
+    <h2 class="section-title fade-in">Support Our Mission</h2>
+    <p class="donate-sub">Choose any method below to contribute:</p>
+    <div class="donate-options">
+      <div class="donate-method">
+        <h3>Bkash</h3>
+        <p>Number: <strong>017XX-XXXXXX</strong></p>
+        <p>Type: Personal / Merchant</p>
+      </div>
+      <div class="donate-method">
+        <h3>Nagad</h3>
+        <p>Number: <strong>018XX-XXXXXX</strong></p>
+        <p>Type: Personal / Merchant</p>
+      </div>
+      <div class="donate-method">
+        <h3>Bank Transfer</h3>
+        <p>Bank: Green Earth Bank</p>
+        <p>A/C Name: Earth's Ants</p>
+        <p>A/C No: 1234567890</p>
+        <p>SWIFT Code: GEBLBDDH</p>
+      </div>
+      <div class="donate-method">
+        <h3>International Support</h3>
+        <p><a href="https://paypal.me/earthsants" target="_blank">Donate via PayPal</a></p>
+        <p><a href="https://wise.com/donate-earthsants" target="_blank">Donate via Wise</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+<script src="main.js"></script>
+</body>
+</html>

@@ -692,3 +692,60 @@
 .slider-wrapper:hover .slider-track {
   animation-play-state: paused;
 }
+.cta-modal {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw; height: 100vh;
+  background: rgba(0,0,0,0.6);
+  display: flex; align-items: center; justify-content: center;
+  z-index: 2000;
+}
+.cta-modal-content {
+  background: white;
+  padding: 2rem;
+  border-radius: 15px;
+  max-width: 500px;
+  width: 90%;
+  position: relative;
+}
+.cta-close {
+  position: absolute;
+  top: 15px; right: 20px;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.cta-modal input, .cta-modal textarea, .cta-modal select {
+  width: 100%; padding: 10px;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc; border-radius: 5px;
+}
+.cta-submit-button {
+  background: linear-gradient(45deg, #2c5530, #4a7c59);
+  color: white; padding: 10px 20px;
+  border: none; border-radius: 5px;
+  cursor: pointer; font-weight: bold;
+}
+.cta-submit-button:hover {
+  background: #28a745;
+}
+
+.hidden {
+  display: none;
+}
+.donate-section {
+  padding: 80px 0;
+  background: #f8f9fa;
+}
+.donate-options {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+.donate-method {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  text-align: center;
+}
